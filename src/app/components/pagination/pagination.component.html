@@ -1,0 +1,11 @@
+<div class=" flex  border border-solid border-primary">
+  <a (click)="goToPrevPage()" class="px-2.5 py-1.5 bg-arrow-background font-inter text-xl" href="#">&lt;</a>
+  <ng-container *ngFor='let pageNumber of numOfPagesArray; let i = index;'>
+    <a *ngIf="i < 3" (click)="onPageSelected(pageNumber + 1)"
+       [ngClass]="{'font-bold': currentActivePage === pageNumber + 1}"
+       class="px-2.5 py-1.5 border-solid border-primary border-l-2 font-inter font-normal"><span class="text-xl">{{pageNumber + 1}}</span></a>
+  </ng-container>
+  <a (click)="goToNextPage()" class="px-2.5 py-1.5 bg-arrow-background font-inter text-xl" href="#">&gt;</a>
+</div>
+
+

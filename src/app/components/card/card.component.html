@@ -1,0 +1,14 @@
+<div class="card h-72 w-full bg-white rounded-none shadow md:mb-8 md:h-60 lg:h-80">
+  <img *ngIf="card.imageUrl" [src]="card.imageUrl" class="h-48 w-full md:h-28 lg:h-48"/>
+  <div *ngIf="!card.imageUrl" class="h-48 md:h-28 lg:h-48 w-full"></div>
+  <div class="bg-gray-200  mx-2 text-headline">
+    <p *ngIf="card.headline">{{card.headline}}</p>
+    <p *ngIf="card.subHeadline" class="mt-1 text-headline text-sm ">{{card.subHeadline}}</p>
+    <div *ngIf="!card.subHeadline" class="mt-4 mx-2 text-headline overflow-hidden text-sm ">
+      <svg fill="none" height="12" viewBox="0 0 218 12" width="218" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" d="M0 12H218V0H0V12Z" fill="#DEDEDE" fill-rule="evenodd"/>
+    </svg>
+    </div>
+  </div>
+</div>
+
