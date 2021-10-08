@@ -1,10 +1,10 @@
 {
   "name": "tailor-brands-assignment",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "getAllCards.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node getAllCards.js"
   },
   "private": true,
   "dependencies": {

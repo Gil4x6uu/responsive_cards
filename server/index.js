@@ -1,16 +1,15 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
+dotenv.config({
+  path: '../.env'
+});
 import AirTableHandler from "./handlers/air-table-handler.js"
-dotenv.config();
 
 const app = express();
-const port = process.env.PORT || '3001';
+const port = process.env.PORT || '3000';
 
-app.use(express.static('public'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+
 app.use(cors());
 
 app.get('*', airTableController);
