@@ -1,4 +1,4 @@
-##FullStack Project - Responsive cards
+## FullStack Project - Responsive cards
 
 ### General info:
 ##### Built with
