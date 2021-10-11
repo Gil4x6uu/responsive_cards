@@ -1,11 +1,13 @@
-## Gil Gross  -  Tailor Brands Fullstack home assigment
+##FullStack Project - Responsive cards
 
 ### General info:
 ##### Built with
 - [Angular](https://angular.io/start)
 - [Express](https://expressjs.com/)
+- [AirTable](https://airtable.com/)
+- [tailwindcss](https://tailwindcss.com/)
 
-##### ./api - Express serverless function deployed to Vercel.
+##### ./api - Node.js serverless function deployed to Vercel.
 ##### ./server - Express server for local development.
 ##### ./src - Client side Code in Angular.
 
