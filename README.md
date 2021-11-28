@@ -1,6 +1,8 @@
 ## FullStack Project - Responsive cards
 
 ### General info:
+ A single page application
+that retrieves data from a backend API and displays it based on the provided design.
 ##### Built with
 - [Angular](https://angular.io/start)
 - [Express](https://expressjs.com/)
